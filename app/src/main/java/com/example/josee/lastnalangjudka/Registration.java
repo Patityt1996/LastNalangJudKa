@@ -80,7 +80,7 @@ public class Registration extends AppCompatActivity {
         passwordEditTxt = (EditText) findViewById(R.id.password);
         contactNo = (EditText) findViewById(R.id.contactNumber);
         address = (EditText) findViewById(R.id.addressEditText);
-        displayHashPassword = findViewById(R.id.passwordTextView);
+        //displayHashPassword = findViewById(R.id.passwordTextView);
         bdayEditTxt = (EditText) findViewById(R.id.birthdayEditText);
         registerBtn = (Button) findViewById(R.id.registerButton);
         beerDayBtn = (Button) findViewById(R.id.bdayButton);
@@ -112,7 +112,7 @@ public class Registration extends AppCompatActivity {
         registerBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                computeMD5Hash(passwordEditTxt.toString());
+//                computeMD5Hash(passwordEditTxt.toString());
                 createNewAccount();
             }
         });
@@ -221,7 +221,7 @@ public class Registration extends AppCompatActivity {
         }
     }
 
-    public void computeMD5Hash(String password)
+   /* public void computeMD5Hash(String password)
     {
         try
         {
@@ -243,5 +243,5 @@ public class Registration extends AppCompatActivity {
         {
             e.printStackTrace();
         }
-    }
+    }*/
 }
